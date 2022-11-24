@@ -1,0 +1,53 @@
+Hello , I am Matthew.
+
+
+First, you need to install Geth which is a command-line interface (CLI) tool that communicates with the Ethereum network and acts as the link between your computer and the rest of the Ethereum nodes.
+
+To run a private network, you need to provide geth with some basic information required to create the initial block. Every blockchain starts with a Genesis Block, the very first block in the chain. To create our private blockchain, we will create a genesis block with a custom genesis file. Then, ask Geth to use that genesis file to create our own genesis block
+
+Create new folder called AlphaChain for this project.
+
+In this AlphaChain folder, to create a private blockchain, a genesis block is needed.
+
+
+To do this, create a genesis file, which is a JSON file like this..
+
+The Genesis block is the root block, the first block in the AlphaChain.
+
+This command will create a directory called node1  in your project.
+
+You type command  like as above command to create 2 nodes.
+
+You also type command  like as above command to create 3 nodes.
+
+With three nodes started up, they are running as a server process, waiting for events and commands to be executed. You should not interrupt the server process by entering commands in its console window. Instead, you should send commands to it from another client process.
+This is achieved by starting another geth process as a client and connecting it to the geth server process.
+Once attached, you can then send interactive commands to the server process. You can do this by first attaching your geth client to a geth server process.
+
+
+This command line attaches to geth node 1 via namepipe:
+
+like node one.
+
+
+The two running nodes do not know each other even though we have specified that they are in the same network, with id 1121. For now, we are not bootstrapping nodes on startup, i.e. not configuring known static nodes on startup. We will add a peer node manually.
+
+To get the node information of node 1, enter the function admin.nodeInfo from the node 1 client console
+
+To get the node information of node 1, enter the function admin.nodeInfo from the node 2 client console
+
+To get the node information of node 1, enter the function admin.nodeInfo from the node 3 client console
+
+In node 1, you can add node 2 , node3 by using the admin.addPeer function by specifying the entire enode data of node 2,node3 as below. This function will return "true":
+
+In node2, you can add node 3, by using the admin.addPeer function by specifying the entire enode data of node3 as below.
+
+
+
+Once added, both nodes will recognize each other. You can verify this using the admin.peers function.
+
+From node 1, enter the function personal.newAccount and provide your password. This function will return the address of the newly created account.
+
+Start mining on node 1 by using the function miner.start(1), where 1 refers to the number of threads. Note that the miner.start(n) function will always return "null." Unless you have many CPU cores, keep the thread number low to avoid high CPU usage. Note that mining without any pending transaction can still earn your default account incentive (ETH). It creates empty blocks, thus strengthening the integrity of the blockchain tree.
+
+All  nodes will have the same number of blocks in their blockchain.

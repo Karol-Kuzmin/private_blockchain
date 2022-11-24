@@ -1,0 +1,33 @@
+=============== Nov 20, 2022 (PST) ===============
+23:24:43.448840 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:24:43.524725 db@open opening
+23:24:43.543556 version@stat F·[] S·0B[] Sc·[]
+23:24:43.583558 db@janitor F·2 G·0
+23:24:43.583642 db@open done T·58.4117ms
+23:24:43.982089 db@close closing
+23:24:43.982089 db@close done T·0s
+=============== Nov 20, 2022 (PST) ===============
+23:26:54.309595 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:26:54.310593 version@stat F·[] S·0B[] Sc·[]
+23:26:54.310593 db@open opening
+23:26:54.310593 journal@recovery F·1
+23:26:54.312588 journal@recovery recovering @1
+23:26:54.369158 memdb@flush created L0@2 N·11 S·640B "Hѡ..L\x87%,v4":"r\x00\x00..L\x87%,v6"
+23:26:54.373929 version@stat F·[1] S·640B[640B] Sc·[0.25]
+23:26:54.505859 db@janitor F·3 G·0
+23:26:54.505859 db@open done T·195.2661ms
+=============== Nov 21, 2022 (PST) ===============
+00:37:08.307630 db@close closing
+00:37:08.308627 db@close done T·997.1µs
+=============== Nov 21, 2022 (PST) ===============
+00:37:10.365545 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+00:37:10.366057 version@stat F·[1] S·640B[640B] Sc·[0.25]
+00:37:10.366057 db@open opening
+00:37:10.366057 journal@recovery F·1
+00:37:10.367588 journal@recovery recovering @3
+00:37:10.426206 memdb@flush created L0@5 N·1461 S·79KiB "-\x95\xb1..\n\xd8o,v1468":"\xe8\x8bT..n\x90\xbe,v72"
+00:37:10.428548 version@stat F·[2] S·80KiB[80KiB] Sc·[0.50]
+00:37:10.531641 db@janitor F·4 G·0
+00:37:10.531641 db@open done T·165.5837ms
+02:56:11.784621 db@close closing
+02:56:11.784621 db@close done T·0s
